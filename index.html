@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="logo-text">WhatsApp</h2>
+    </nav>
+    <div class="container" id="messageContainer">
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Message" required>
+            <button type="submit" id="send-btn">
+                <img src="imgs/send.png" alt="Send" class="send-icon">
+            </button>
+        </form>
+    </div>
+
+    <audio id="notificationSound" src="ting.mp3" preload="auto"></audio>
+
+    <footer class="logo-text" style="font-weight: 600;">Copy Rights © All Rights Reserved 2024 - Abdul Raheem</footer>
+</body>
+</html>
+
